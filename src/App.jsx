@@ -1,10 +1,9 @@
-import { GlobalStyles } from './styles/GlobalStyles';
+import Testimonials from './components/testimonials/Testimonials';
 
 const App = () => {
 	return (
 		<>
-			<GlobalStyles />
-			<h1>Núcleo de la aplicación</h1>
+			<Testimonials />
 		</>
 	);
 };
