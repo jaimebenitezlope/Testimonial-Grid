@@ -4,12 +4,13 @@ const StyledTestimonials = styled.div`
 	box-sizing: border-box;
 	width: ${props => props.width};
 	height: ${props => props.height};
-	background-color: ${props => props.color};
+	background-color: ${props => props['background-color']};
 	margin-bottom: 30px;
 	border-radius: 10px;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	font-weight: 100;
 	font-style: normal;
+	color: ${props => props.color};
 `;
 
 const StyledHeader = styled.div`
@@ -34,21 +35,19 @@ const StyledHeader = styled.div`
 	}
 	h3 {
 		font-size: 13px;
-		color: white;
 		margin: 0;
 	}
 	p {
 		font-size: 11px;
-		color: #f0f0f0;
+
 		margin: 2px 0 0 0;
 	}
 `;
 
 const StyledFirstText = styled.p`
 	position: absolute;
-	margin-top: ${props => props.margin - top};
+	margin-top: ${props => props['margin-top']};
 	font-family: 'Barlow Semi Condensed', sans-serif;
-	color: white;
 	width: ${props => props.width};
 	height: ${props => props.height};
 	font-size: 20px;
@@ -59,15 +58,13 @@ const StyledFirstText = styled.p`
 
 const StyledSecondText = styled.p`
 	position: absolute;
-	margin-top: 200px;
+	margin-top: ${props => props['margin-top']};
 	font-family: 'Barlow Semi Condensed', sans-serif;
-	color: white;
 	width: ${props => props.width};
 	height: ${props => props.height};
 	font-size: 13px;
 	margin-left: 30px;
 	margin-right: 30px;
-	color: #cfcfcf;
 	line-height: 20px;
 `;
 
